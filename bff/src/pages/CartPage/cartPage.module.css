@@ -1,0 +1,250 @@
+.loader {
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 2rem 1rem;
+  border: 2px solid rgb(200, 200, 200);
+  position: relative;
+  height: 500px;
+}
+
+.emptyCartPage {
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 2rem 1rem;
+  border: 2px solid rgb(200, 200, 200);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emptyCartPageHeading {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.emptyCartPageSubheading {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.emptyCartPageContinueShoppingBtn {
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  padding: 0.5rem 1.5rem;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.emptyCartPageContinueShoppingBtn svg {
+  margin-right: 0.5rem;
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--grey);
+}
+
+.cartPage {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  max-width: 1300px;
+  margin: 1rem auto;
+  padding-bottom: 10rem;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+
+.shoppingCart {
+  border: 1.5px solid rgb(200, 200, 200);
+  padding: 2rem;
+}
+
+.shoppingCartHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.sortBtns button {
+  margin-left: 0.5rem;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: transparent;
+  font-family: var(--primary-font);
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.sortBtns svg {
+  margin-left: 0.25rem;
+}
+
+.orderSummary {
+  border: 1.5px solid rgb(200, 200, 200);
+  padding: 2rem;
+}
+
+.heading {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.8rem 0;
+}
+
+.continueShoppingBtn {
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  padding: 0.5rem 1.5rem;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+.continueShoppingBtn svg {
+  margin-right: 0.5rem;
+}
+
+.checkOutBtn {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  padding: 0.4rem;
+  font: var(--primary-font);
+  font-weight: 500;
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 3px;
+  width: 100%;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.checkOutBtn svg {
+  margin-right: 0.5rem;
+}
+
+.errorMessage {
+  color: red;
+}
+
+.inputGroup {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.inputGroup input {
+  font-size: 1rem;
+  padding: 1rem 0 0.5rem;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--grey);
+  color: var(--black);
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-bottom: none;
+}
+
+.inputGroup label {
+  color: var(--grey);
+  font-size: 1rem;
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.inputGroup input:focus ~ label,
+.inputGroup input:valid ~ label {
+  top: -0.5rem;
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+.inputGroup .bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.inputGroup .bar:before,
+.inputGroup .bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: var(--primary-color);
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.inputGroup .bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+.inputGroup input:focus ~ .bar:before,
+.inputGroup input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.addressHeading,
+.totalHeading {
+  text-align: left;
+  font-size: 1rem;
+  color: var(--black);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.totalItems {
+  color: var(--black);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.summaryHeader,
+.summaryFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.totalPrice {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+}

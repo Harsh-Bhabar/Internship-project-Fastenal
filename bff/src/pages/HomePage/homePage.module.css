@@ -1,0 +1,181 @@
+.shopSection {
+  text-align: center;
+  max-width: 1300px;
+  margin: auto;
+  padding: 6rem 0;
+}
+
+.mainHeading {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--black);
+  line-height: 1.5;
+  margin: 2rem 0;
+}
+
+.shopBtn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  max-width: 175px;
+  color: white;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 100%;
+  font-family: var(--primary-font);
+}
+
+.browseSection {
+  display: grid;
+  grid-template-areas:
+    "mensWatch womensWatch howToSelect"
+    "mensWatch womensWatch howToSelect"
+    "mensWatch womensWatch shopAll";
+  gap: 0.5rem;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.browseSection img {
+  width: 100%;
+}
+
+.mensWatch {
+  grid-area: mensWatch;
+}
+
+.womensWatch {
+  grid-area: womensWatch;
+}
+
+.howToSelect {
+  grid-area: howToSelect;
+}
+
+.shopAll {
+  grid-area: shopAll;
+}
+
+.newsletterSection {
+  text-align: center;
+  position: relative;
+  color: white;
+  background-color: #202020;
+  min-height: 400px;
+  padding-top: 5rem;
+  margin: 5rem 0;
+  z-index: 1;
+}
+
+.newsletterSection h1 {
+  color: white;
+}
+
+.newsletterSection p {
+  color: white;
+}
+
+.newsletterSection img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+.newsletterInput {
+  padding: 0.6rem;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 0;
+  max-width: 300px;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  border-radius: 3px;
+}
+
+.subscribeBtn {
+  padding: 0.6rem;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  border-radius: 0;
+  font-weight: 500;
+  max-width: 120px;
+  width: 100%;
+  cursor: pointer;
+  margin-left: 0.25rem;
+  border-radius: 3px;
+}
+
+.newsletterInput::placeholder {
+  color: rgba(255, 255, 255, 0.671);
+}
+
+.features {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+  padding: 2rem 0;
+}
+
+.feature {
+  background-color: var(--card-bg);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.popularSection {
+  max-width: 1300px;
+  margin: auto;
+  padding: 7rem 0;
+  position: relative;
+}
+
+.popularHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shopAllBtn {
+  border: 2px solid var(--primary-color);
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0.5rem 3rem;
+  max-width: 175px;
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 100%;
+  font-family: var(--primary-font);
+}
+
+@media only screen and (max-width: 1400px) {
+  .shopSection,
+  .browseSection,
+  .features,
+  .popularSection {
+    max-width: 900px;
+  }
+}

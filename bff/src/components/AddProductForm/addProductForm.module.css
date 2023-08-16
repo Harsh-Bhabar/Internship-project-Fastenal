@@ -1,0 +1,174 @@
+.addProductForm {
+  display: grid;
+  grid-template-columns: auto 30%;
+  gap: 2rem;
+  align-items: start;
+  margin-left: 1rem;
+}
+
+.form table {
+  color: var(--black);
+  width: 100%;
+}
+
+.form td {
+  padding: 0.5rem 0;
+}
+
+.form input {
+  border: 2px solid rgb(222, 222, 222);
+  border-radius: 3px;
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: var(--black);
+  width: 100%;
+}
+
+.form input:focus {
+  border: 2px solid var(--primary-color);
+}
+
+.form input::placeholder {
+  color: var(--grey);
+  font-size: 0.9rem;
+}
+
+.productPreview {
+  background-color: white;
+  border-radius: 3px;
+  max-width: 300px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  border: 1px solid var(--grey);
+  margin: 0.25rem;
+}
+
+.cardHeader,
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brandName {
+  color: var(--grey);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.actionBtns {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.imgDiv {
+  height: 250px;
+  max-width: 250px;
+  width: 100%;
+  padding: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.imgDiv:hover {
+  transform: scale(1.2);
+}
+
+.productImage {
+  object-fit: contain;
+  height: 200px;
+  max-width: 250px;
+  width: 100%;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.productImage:hover {
+  transform: scale(1.2);
+}
+
+.name {
+  color: var(--black);
+  font-size: 1.2rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+a {
+  text-decoration: none;
+}
+
+.price {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.addToCartBtn,
+.addProductBtn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  border-radius: 3px;
+  padding: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 175px;
+  color: white;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 100%;
+  font-family: var(--primary-font);
+}
+
+.addToCartBtn {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.addToCartBtn svg {
+  margin-right: 1rem;
+}
+
+.addProductBtn {
+  margin-top: 1rem;
+  max-width: 300px;
+  padding: 0.5rem;
+}
+
+.addProductBtn svg {
+  margin-right: 1rem;
+}
+
+.previewHeading {
+  font-size: 1.2rem;
+  color: var(--black);
+  font-weight: 600;
+}
+
+.label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--black);
+}

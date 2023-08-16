@@ -1,0 +1,174 @@
+.profileBtn {
+  border: 2px solid var(--primary-color);
+  border-radius: 3px;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0 1rem;
+  font-family: var(--primary-font);
+  font-size: 1.1rem;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+  justify-content: center;
+  color: var(--primary-color);
+  text-transform: capitalize;
+  position: relative;
+  min-width: 150px;
+}
+
+.userProfilePic {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 5rem;
+}
+
+.dropdown {
+  background-color: white;
+  position: absolute;
+  top: 9vh;
+  right: 1rem;
+  padding: 0.5rem;
+  min-width: 220px;
+  border-radius: 3px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdownContent {
+  margin: 0.5rem 0;
+}
+
+.dropdownItem {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--grey);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2.5rem 0.5rem 0.5rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.dropdownItem:hover {
+  background-color: rgb(228, 228, 228);
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(224, 224, 224);
+}
+
+.icon {
+  margin-right: 1.5rem;
+}
+
+.container {
+  padding: 1.5rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.685);
+}
+
+.modalContent {
+  background-color: #fefefe;
+  max-width: 500px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modalMainHeading {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.modalSubHeading {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.modalActionBtns {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.modalCancelBtn,
+.modalConfirmBtn {
+  width: 100%;
+  outline: none;
+  padding: 0.5rem;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.modalCancelBtn {
+  border: 2px solid var(--grey);
+  color: var(--black);
+  background-color: transparent;
+}
+
+.modalConfirmBtn {
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.loader {
+  border: 4px solid rgb(221, 221, 221);
+  border-radius: 5rem;
+  border-top: 4px solid var(--primary-color);
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 18%;
+  left: 40%;
+}
+
+.internalErrorMessage {
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

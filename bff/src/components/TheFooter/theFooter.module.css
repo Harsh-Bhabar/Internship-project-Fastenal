@@ -1,0 +1,134 @@
+.theFooter {
+  background-color: var(--primary-color);
+  margin-top: 4rem;
+}
+.footerSection {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "contact sitemap socials";
+  gap: 3rem;
+  padding: 2rem 0;
+}
+.logo {
+  width: 150px;
+  margin: 2rem 0;
+}
+.sectionHeading {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 1.5rem 0;
+}
+.contact {
+  display: flex;
+  align-items: center;
+}
+.contact svg {
+  margin-right: 1rem;
+}
+.link {
+  color: white;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0.5rem 0;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+.link:hover {
+  opacity: 1;
+}
+.contactDetails {
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  grid-area: contact;
+}
+.siteMap {
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  grid-area: sitemap;
+}
+.socialsSection {
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  grid-area: socials;
+}
+.contactBtns {
+  display: flex;
+}
+.contactBtn {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5rem;
+  border: 1px solid white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  margin-right: 0.5rem;
+  width: 40px;
+}
+.copyrightSection {
+  margin: auto;
+  padding-bottom: 1rem;
+  max-width: 1200px;
+  text-align: right;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.newsletter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.newsletterInput {
+  padding: 0.5rem;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 3px 0 0 3px;
+  max-width: 250px;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1rem;
+}
+
+.subscribeBtn {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  background-color: white;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  border-radius: 0 3px 3px 0;
+  font-weight: 500;
+  max-width: 120px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.newsletterInput::placeholder {
+  color: rgba(255, 255, 255, 0.671);
+}
+@media only screen and (max-width: 1220px) {
+  .footerSection {
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+  .developedBySection {
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .footerSection {
+    grid-template-areas:
+      "contact"
+      "sitemap"
+      "socials";
+  }
+  .developedBySection {
+    text-align: center;
+  }
+}

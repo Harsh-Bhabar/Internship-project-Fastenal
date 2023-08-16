@@ -1,0 +1,156 @@
+.filters {
+  background-color: white;
+  border-radius: 3px;
+  max-width: 300px;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  position: sticky;
+  top: 11vh;
+  align-self: flex-start;
+  border: 1px solid var(--grey);
+}
+
+.filterHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filterHeadingDiv {
+  display: flex;
+  align-items: center;
+}
+
+.filterHeading svg {
+  margin-right: 1rem;
+}
+
+.clearFiltersBtn {
+  border: 2px solid var(--grey);
+  border-radius: 3px;
+  background-color: transparent;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.25rem 1rem;
+  color: var(--grey);
+  cursor: pointer;
+}
+
+.clearFiltersBtn:hover {
+  color: var(--black);
+}
+
+.mainHeading {
+  color: var(--grey);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.filterSection {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgb(231, 231, 231);
+}
+
+.filterSectionHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subHeading {
+  color: var(--black);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.collapseBtn {
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  border-radius: 5rem;
+}
+
+.collapseBtn:hover {
+  background-color: rgb(219, 219, 219);
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: transparent;
+  border: 1.5px solid var(--black);
+  border-radius: 2px;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: var(--primary-color);
+  border: none;
+  height: 20px;
+  width: 20px;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 7px;
+  top: 4px;
+  width: 3px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.filterSectionContent {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.filterSectionContent::-webkit-scrollbar {
+  width: 6px;
+}
+.filterSectionContent::-webkit-scrollbar-thumb {
+  background: rgb(210, 210, 210);
+  border-radius: 1rem;
+  border: 0px solid transparent;
+  background-clip: content-box;
+}

@@ -1,0 +1,105 @@
+.loader {
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 2rem 1rem;
+  border: 2px solid rgb(200, 200, 200);
+  position: relative;
+  height: 500px;
+}
+
+.content {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+
+.mainHeading {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.sortBtn {
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: 2px solid var(--grey);
+  background-color: transparent;
+  color: var(--grey);
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--primary-font);
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+
+.sortBtn span {
+  color: var(--primary-color);
+  margin: 0 0.5rem;
+}
+
+.emptyOrdersPage {
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 2rem 1rem;
+  border: 2px solid rgb(200, 200, 200);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emptyOrdersPageHeading,
+.wishlistHeading {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.wishlistHeading {
+  max-width: 1300px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.emptyOrdersPageSubheading {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.emptyOrdersPageContinueShoppingBtn {
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  padding: 0.5rem 1.5rem;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.emptyOrdersPageContinueShoppingBtn svg {
+  margin-right: 0.5rem;
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--grey);
+}
+
+.orderItems {
+  min-height: 50vh;
+}

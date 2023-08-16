@@ -1,0 +1,55 @@
+.searchQuery {
+  max-width: 1300px;
+  margin: auto;
+  padding: 3rem 0;
+  color: var(--black);
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.searchResults {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.emptyResultPage {
+  max-width: 1300px;
+  margin: auto;
+  padding: 2rem 1rem;
+  border: 2px solid rgb(200, 200, 200);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emptyResultPageHeading {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.emptyResultPageSubheading {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.emptyResultPageContinueShoppingBtn {
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  padding: 0.5rem 1.5rem;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.emptyResultPageContinueShoppingBtn svg {
+  margin-right: 0.5rem;
+}

@@ -1,0 +1,123 @@
+.shopPage {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.loader {
+  max-width: 1000px;
+  height: 500px;
+  position: relative;
+}
+
+.internalError {
+  margin-top: -1rem;
+}
+
+.productsGallery {
+  max-width: 1000px;
+}
+
+.emptyProductPage {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emptyProductPageHeading {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.emptyProductPageSubheading {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.emptyProductPageContinueShoppingBtn {
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  padding: 0.5rem 1.5rem;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.emptyProductPageContinueShoppingBtn svg {
+  margin-right: 0.5rem;
+}
+
+.pageActionBtns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.prevBtn,
+.nextBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--black);
+  background-color: transparent;
+  border: 1px solid var(--grey);
+  border-radius: 3px;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+
+.currentPage {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.prevBtn {
+  margin-right: 1rem;
+}
+
+.nextBtn {
+  margin-left: 1rem;
+}
+
+.prevBtn svg {
+  margin-right: 0.5rem;
+}
+
+.nextBtn svg {
+  margin-left: 0.5rem;
+}
+
+.disabledBtn {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media only screen and (max-width: 1300px) {
+  .shopPage {
+    max-width: 1100px;
+  }
+  .productsGallery {
+    max-width: 800px;
+  }
+}
+@media only screen and (max-width: 720px) {
+}
+
+@media only screen and (max-width: 500px) {
+}

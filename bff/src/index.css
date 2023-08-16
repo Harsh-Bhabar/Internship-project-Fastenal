@@ -1,0 +1,30 @@
+:root {
+  --primary-color: #dea48b;
+  --grey: #9a9797;
+  --black: #6d6d6d;
+  --primary-font: "Barlow Condensed", sans-serif;
+  --card-bg: #efefef;
+}
+
+::selection {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: var(--primary-font);
+}
+
+.disableUserSelect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

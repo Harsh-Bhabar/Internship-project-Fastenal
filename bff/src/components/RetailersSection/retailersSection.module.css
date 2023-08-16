@@ -1,0 +1,48 @@
+.retailerSection {
+  background-color: rgb(231, 231, 231);
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  padding: 2rem 0 4rem;
+  margin: 7rem 0 5rem;
+  width: 100%;
+}
+
+.heading {
+  font-size: 2rem;
+  color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+
+.retailerSection .sliderContainer {
+  animation: scroll 20s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.retailerSection .slide {
+  height: auto;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2rem;
+}
+
+.slide img {
+  height: 50px;
+  width: 250px;
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}

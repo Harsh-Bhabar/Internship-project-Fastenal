@@ -1,0 +1,39 @@
+.searchBar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.searchBar input::selection {
+    color: var(--primary-color);
+    background-color: white;
+}
+
+.searchBar input {
+  border: 2px solid var(--grey);
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 3px;
+  background-color: transparent;
+  width: 200px;
+  color: white;
+  font-family: var(--primary-font);
+  transition: all 0.3s ease;
+}
+
+.searchBar input::placeholder {
+    color: var(--grey);
+}
+
+.searchBar input:focus {
+  width: 300px;
+}
+
+.searchBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  cursor: pointer;
+}

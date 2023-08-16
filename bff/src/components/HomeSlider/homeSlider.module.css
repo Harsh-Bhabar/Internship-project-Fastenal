@@ -1,0 +1,35 @@
+.slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+
+.slide {
+  display: inline-block;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.indicators {
+  text-align: center;
+  margin-top: -2rem;
+  z-index: 10;
+  position: sticky;
+}
+
+.indicator {
+  display: inline-block;
+  height: 0.55rem;
+  width: 0.55rem;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 0.25rem;
+  background-color: rgb(195, 195, 195);
+}

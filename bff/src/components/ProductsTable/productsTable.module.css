@@ -1,0 +1,182 @@
+.productsTable {
+  text-align: left;
+  border: 2px solid rgb(224, 224, 224);
+  padding: 1.5rem;
+  margin: 1rem;
+  position: relative;
+}
+
+.productsTable table {
+  width: 100%;
+}
+
+.productsTable thead {
+  background-color: rgb(237, 237, 237);
+}
+
+.productsTable th {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--black);
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+
+.productsTable td {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--black);
+  padding: 0.75rem;
+  border-bottom: 1px solid rgb(217, 217, 217);
+  text-transform: capitalize;
+}
+
+.actionBtns {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.viewBtn,
+.editBtn,
+.deleteBtn {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.viewBtn:hover {
+  background-color: rgb(237, 237, 237);
+}
+.editBtn:hover {
+  background-color: rgb(237, 237, 237);
+}
+.deleteBtn:hover {
+  background-color: rgb(237, 237, 237);
+}
+
+.container {
+  padding: 1.5rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.685);
+}
+
+.modalContent {
+  background-color: #fefefe;
+  max-width: 500px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modalMainHeading {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.modalSubHeading {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.modalSubHeading span {
+  color: red;
+  font-weight: 600;
+}
+
+.modalActionBtns {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.modalCancelBtn,
+.modalDeleteBtn {
+  width: 100%;
+  outline: none;
+  padding: 0.5rem;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.modalCancelBtn {
+  border: 2px solid var(--grey);
+  color: var(--black);
+  background-color: transparent;
+}
+
+.modalDeleteBtn {
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.pageActionBtns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.prevBtn,
+.nextBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--black);
+  background-color: transparent;
+  border: 1px solid var(--grey);
+  border-radius: 3px;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+
+.currentPage {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.prevBtn {
+  margin-right: 1rem;
+}
+
+.nextBtn {
+  margin-left: 1rem;
+}
+
+.prevBtn svg {
+  margin-right: 0.5rem;
+}
+
+.nextBtn svg {
+  margin-left: 0.5rem;
+}
+
+.disabledBtn {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

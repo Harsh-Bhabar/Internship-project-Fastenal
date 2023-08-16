@@ -1,0 +1,87 @@
+.cartTable {
+    padding: 1rem 0;
+}
+
+.cartTable img {
+    height: 75px;
+    width: 75px;
+    object-fit: contain;
+}
+
+.cartTable table {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.cartTable th, .cartTable  td {
+    padding-right: 1rem;
+}
+
+.cartTable th {
+    text-align: left;
+    font-size: 0.8rem;
+    color: var(--grey);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.cartTable td {
+    color: var(--grey);
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+.cartTable a {
+    color: var(--black);
+}
+
+.removeBtn {
+    border: 2px solid var(--grey);
+    color: var(--black);
+    outline: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+    font-family: var(--primary-font);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.removeBtn svg {
+    margin-right: 0.5rem;
+}
+
+.quantityField {
+    display: flex;
+    align-items: center;
+}
+
+.decreaseQtyBtn, .increaseQtyBtn {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.decreaseQtyBtn {
+    margin-right: 0.75rem;
+}
+
+.decreaseQtyBtn:hover {
+    transform: scale(1.5);
+}
+
+.increaseQtyBtn {
+    margin-left: 0.75rem;
+}
+
+.increaseQtyBtn:hover {
+    transform: scale(1.5);
+}
